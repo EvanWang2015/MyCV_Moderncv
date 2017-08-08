@@ -1,0 +1,147 @@
+ %% start of file `template.tex'.
+%% Copyright 2017  Haitang Wang (wanghaitang.ufl@gmail.com).
+%% Additional information please refer to moderncv and Mike Liu's personal page
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+%\usepackage{xecjk}
+%\usepackage{verbatim}
+%\usepackage{unicode}
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{black}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.82]{geometry}
+\setlength{\hintscolumnwidth}{2.2cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Haitang}
+\familyname{Wang}
+\address{167 Rhines Hall, Gainesville, FL 32611}    % optional, remove the line if not wanted
+\mobile{(352) 226-5567}                    % optional, remove the line if not wanted
+\email{wanghaitang.ufl@gmail.com}                      % optional, remove the line if not wanted
+%\homepage{https://www.wanghaitangufl.com}  
+\extrainfo{\url{http://www.wanghaitangufl.com}} % optional, remove the line if not wanted
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{Education}
+\cventry{May 2017}{Ph.D. in Nuclear Engineering Sciences}{University of Florida}{Gainesville, FL}{}{}
+{$^{}$}%{\textbf{Advisor:} Dr. Andreas Enqvist}
+\cvline{}{\href{http://www.nuceng.ufl.edu/people/andreas-enqvist/}{advisor: \small Professor Andreas Enqvist}}
+
+\cventry{May 2017}{M.S. in Computer Engineering}{University of Florida}{Gainesville, FL}{}
+{}
+%\cventry{2016--2017}{M.S. in Computer Engineering}{University of Florida}{Gainesville, FL}{}{}
+\cventry{June 2012}{B.S. in Applied Physics}{China University of Petroleum}{Dongying \& Qingdao, China}{}
+{\textbf{Minor} in Nuclear Physics}  % arguments 3 to 6 can be left empty
+%\cvline{gpa:}{\small 3.76/4.0}
+\section{Major Achievements}
+\cvline{}{\href{http://www.ans.org/honors/recipients/vy-2013}{1. 1$^{st}$ place of American Nuclear Society Graduate Student Design Competition, 2013}} 
+%\cvline{}{Ranked top 1\% in the major}
+\cvline{}{2. Recipient of ACM TAPIA Conference Scholarship, 2016}
+\cvline{}{3. Outstanding Graduate Student of Shandong Province of Class 2012}
+\cvline{} {4. Best Senior Design of China University of Petroleum of Class 2012}
+%\cvline{} {  First Class Scholarship of China University of Petroleum from 2009 -- 2011}
+\cvline{}{5. First Class Scholarship of China University of Petroleum, 2011}
+\cvline{}{6. National Scholarship for Encouragement, 2010 (top 2\%)}
+\cvline{}{7. Scholarship of Student Leadership in China University of Petroleum, 2009 - 2011}
+\cvline{}{8. Undergraduate research grant from National College Students’ Innovational Technology Program, 2010 - 2011}
+\cvline{}{9. Three-year full scholarships in Yucai Private High School (top 1\%) }
+\section{Skills}
+%\subsection{Proficient With}
+\cvline{Languages:}{Proficient in C++, Matlab, Python, SQL, Mathematica}
+\cvline{}{Familiar with C, Java, R, Scanning Electron Microscope, Raman Microscope}
+\cvline{Quantitative:}{Statistics, Linear Regression, Monte Carlo Simulation, Differential \& Integral Calculus, Mathematical Physics }
+\cvline{Course link:} {It covers implemented core courses in Math, Physics, Electronics and Computer Engineering: \textbf{\textcolor{black}{\url{https://www.wanghaitangufl.com/quantitative-courses}}}} 
+%\section{Course Certificates}
+%\cvline{} {Fundamentals of Quantitative Modelling, Introductions to Spreadsheets and Models, Risk and Return, Time Value of Money, Alternative Methods of Evaluation, Valuing Projects and Companies}
+\section{Experience}
+\cventry{2013 - now}{Graduate Research Assistant}{University of Florida}{Gainesville, FL}{}
+{}
+\cventry{}{Research Associate}{Consortium for Verification Technology}{}{}
+{
+1. Major contributor to the development of analytical models of liquid deuterated detectors for fast neutron detection and the development of particle recognition algorithms considering elastic scattering process. The model allows us to predict the response of non-commercial detectors and save money on early stage of developing new materials.\\
+2. Developer of the Monte Carlo photon tracking system for deuterated scintillation detectors, EJ-315.\\
+3. Major contributor to the development of coincidence trigger algorithm in particle detection which dramatically screens gamma rays out and saves the disk space for waveform storage.   \\
+4. Major contributor to the large measurement campaigns carried out at Athens, Ohio both in 2014 and 2016. 
+}
+\cventry{2009 - 12}{Undergraduate Research Assistant}{China University of Petroleum}{Qingdao, China}{}
+{1. Led a student research project funded by National College Students' Innovational Technology Program to carry out a study of the measurement of the electric conductivity of oil. \\
+2. Implemented numerical calculations of statistical properties of Fermi system under conditions of strong magnetic effect and Fermi gases interactions.}
+\section{Selected Projects}
+\cventry{Spring 2017}{Programming language compiler}{}{}{}%{University of Florida}{Gainesville, FL}{}
+{The semester-long project was implemented in Java, including a parser following a context-free grammar, a syntax tree, a symbol table and generation of bytecode using Java Virtual Machine.}
+\cventry{Fall 2016}{Internet of Things in Xinu}{}{}{}%{University of Florida}{Gainesville, FL}{}
+{We have integrated multiple analog sensors to a Beagle Bone Black board. Java websocket was used as the communication protocol between the edge and cloud server. Digital inputs from sensors were transferred through GPIO pins. Multiple devices like temperature sensors and BBB were mapped in DDL files. Data in/out communication was interrupt-driven. Additionally, the website support to display the current status of the sensor and also control the sensor. The project was implemented in C and Java. .}
+\cventry{Spring 2016}{Data-driven E-commerce trading platform}{}{}{}%{University of Florida}{Gainesville, FL}{}
+{Tables of products, users and trading histories and searching functions were implemented in SQL. Individual web pages were lunched for different type of users with C\#. Trading performance was analyzed and shown on websites. Over 10,000 items were implemented.}
+
+\cventry{Fall 2015}{Micro-structure characterization}{}{}{}%{University of Florida}{Gainesville, FL}{}
+{Applied filtering, rendering, boundary detection, and minimal connected component identification to electron scanned microscope graphs to quantitatively represent distributions of grain size of welding metals based on a linear interception method and grain surface area. The image included 3200 connected components.}
+\cventry{Summer 2014}{Sensor network deployment}{}{}{}%{University of Florida}{Gainesville, FL}{}
+{"Lightweight secure low energy adaptive clustering hierarchy (LS-LEACH): a new secure and energy efficient routing protocol for wireless sensor network". We have created and simulated a wireless sensor network. LEACH and LS-LEACH protocols were implemented and their energy efficiencies were compared. The project was composed of a proposal, a progress report, two presentations and a demo. }
+
+\cventry{Fall 2013}{Micro-structure characterization}{}{}{}%{University of Florida}{Gainesville, FL}{}
+{"Single channel numerical analysis for boiling water reactor and pressurized water reactor". We have considered maximum fuel temperature, maximum cladding temperature, minimum critical heat flux ratio, and applicable range of parameters including the mass flow rates and maximum linear heat transfer. The project was composed of a 40-page technical report and a code package.}
+
+\section{Workshops \& Seminars}
+\cvline{}{1. CAEN Workshop, University of Michigan, MI, 2016 }
+\cvline{}{2. Florida Energy Summit, Jacksonville, FL, 2015}
+\cvline{}{3. INMM 30th Fuel Seminar, Washington D.C., 2015}
+\cvline{}{4. Safeguard Training, Oak Ridge National Laboratory, TN, 2014} 
+\section{Publications \& Conference Proceedings}
+\cvline{}{1. H.T. Wang, D. Carter, T.N. Massey, A. Enqvist, Neutron light output function and resolution investigation of deuterated organic liquid scintillators, \textit{Radiation Measurements}. 2016. 89: 99} 
+\cvline{}{2. A. Enqvist, H.T. Wang, K. Stadnikia, R. Kelley, J. Jordan, New pulse shape discrimination algorithms for application on digitized scintillation pulses,\textit{ IEEE Nuclear Science Symposium \& Medical Imaging Conference}, Strasbourg, France, 2016} 
+\cvline{}{3. Y. Gao, H.T. Wang, J.E. Baciak, A. Enqvist, Shielding analysis of TN-32 spent fuel dry cask with SCALE. \textit{American Nuclear Society}, Las Vegas, NV, 2016}
+\cvline{}{4. H.T. Wang, J. Wyers, Y. Gao, C. Greulick, J. Tulenko, J. Baciak, A. Enqvist, Evaluation of Spent Fuel Cask Condition using Emission Source Tomography: Radiation Evaluation. \textit{ACM TAPIA}, Austin TX, 2016}  
+\cvline{}{5. H.T. Wang, A. Enqvist, Pulse height models for deuterated scintillation detectors. \textit{Nucl. Instr. Meth. A} 2015. 804: 167}
+\cvline{}{6. H.T. Wang, J. Wyers, Y. Gao, C. Greulick, J. Tulenko, J. Baciak, A. Enqvist, Evaluation of Spent Fuel Cask Condition using Emission Source Tomography. \textit{ Institute of Nuclear Material Management}, Atlanta, GA, 2016}
+\cvline{}{7. R. Weinmann-Smith, A. Enqvist, H.T. Wang, T. Harvey, et al., Characterization of a Tin Based Viscous Gel Scintillation Detector for Spectroscopic Gamma-Ray Measurements, \textit{Institute of Nuclear Material Management}, Atlanta, GA, 2016}
+\cvline{}{8. H.T. Wang, L. Rolison, K. Jordan, A. Enqvist, Feasibility exploration of Carbon-11 production by bombarding mixtures of $^{32}$S and $^{11}$B power with fast neutrons. \textit{20th Pacific Basin Nuclear Conference}, Beijing, 2016 (Paper accepted and I was offered to be the Student Section Chair)} 
+\cvline{}{9. Cartas, H.T. Wang, G. Subhash, R. Baney, J. Tulenko. Processing UO$_2$-CNT ceramic matrix composites utilizing Spark Plasma Sintering. \textit{Nucl. Sci. Technol.} 2015. 189: 258}
+\cvline{}{10. H.T. Wang, A. Enqvist, Analysis on fast neuron pulses generated by a deuterated organic scintillator EJ-315. \textit{Institute of Nuclear Material Management}, Indian Wells, CA, 2015}
+\cvline{}{11. H.T. Wang, A. Enqvist, Model calculation of deuterated organic scintillator. \textit{Institute of Nuclear Material Management}, Atlanta, GA, 2015}
+\cvline{}{12. Cartas, H.T. Wang, Distribution and thermal properties of UO$_2$-CNT ceramic matrix composites fabricated by Spark Plasma Sintering. \textit{Transactions of American Nuclear Society} 2013. 109}
+\cvline{}{13. D. Permar, A. Cartas, H.T. Wang, Innovative accident tolerant UO$_2$ composite fuel for use in LWRs. \textit{Transactions of American Nuclear Society} 2013. 109}
+\cvline{}{14. H.T. Wang, F.D. Men, X.L. Chen. Relativistic thermodynamic properties of interacting Fermi gas in a strong magnetic field. \textit{J. At. Mol. Sci.} 2014. 5: 33}
+\cvline{}{15. H.T. Wang, F.D. Men, X.G. He, M.Q. Wei. The stability of a non-extensive relativistic Fermi system. \textit{Chinese Physics B} 2012. 21: 060501}
+\cvline{}{16. H.T. Wang, F.D. Men, X.G. He, M.Q. Wei. The non-extensive relativistic statistical properties of Fermi system. \textit{Journal of Sichuan University} 2012. 3: 61 (in Chinese).}
+
+
+%\section{Activities}
+%\subsection{Research Experience}
+%\cventry{2013 - 2017}{Research Assistant}{University of Florida}{Gainesville, FL}{}{
+%(1) Developed an analytical model of liquid deuterated detectors to calculate the collision probability distributions and light output functions. The model solved the issue of the anisotropic scattering process with fast neutrons. The model integrated the nuclear cross-section database of of Carbon, Hydrogen and Oxygen. (2) Developed trigger algorithms to save the storage space by about 1000 times. (3) Digital data real-time acquisition and particle analysis using pulse shape discrimination and time-of-flight techniques (4) Managed 50 GB data of particle events. (5) Monte-Carlo simulation of particle collision processes. (6) Application of Gaussian Mixture Model and K-Mean in particle clustering.
+%}
+
+%\subsection{Projects}
+%\%cventry{Spring 2017}{Programming language compiler}{}{}{}%{University of Florida}{Gainesville, FL}{}
+%{The project was implemented in Java, including a parser following a context-free grammar, a syntax tree, a symbol table and generation of bytecode using Java Virtual Machine.}
+%\cventry{Spring 2016}{E-commerce trading platform for books}{}{}{}%{University of Florida}{Gainesville, FL}{}
+%{Tables of products, users and trading histories and searching functions were implemented in SQL. Individual logging in web pages were built. Trading performance was analyzed and shown on websites. Over 10,000 items were implemented.}
+
+%\cventry{Fall 2015}{Micro-structure characterization}{}{}{}%{University of Florida}{Gainesville, FL}{}
+%{Applied filtering, rendering, boundary detection, and minimal connected component identification to electron scanned microscope graphs to quantitatively represent distributions of grain size of welding metals based on a linear interception method and grain surface area. The image included 3200 connected components. This method provided a novel way for grain size calculation so that no manual calculations is needed.}
+
+%\subsection{Have Experience With}
+%\cvline{}{Java, Python, R, Fortran}
+%\section{Core courses}
+%\cvline{} {Probability Theory \& Mathematical Statistics, Linear Algebra, Calculus I \& II, Methods of Mathematical Physics, Analysis of Algorithms, Database Management System, Advanced Data Structure, Electrodynamics, Theoretical Mechanics, Quantum Mechanics }
+\end{document}
